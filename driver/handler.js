@@ -11,4 +11,4 @@ function pickupHandler(payload) {
   events.emit('delivered', payload);
 }
 
-module.exports = pickupHandler;
+module.exports = {pickupHandler};
