@@ -2,6 +2,7 @@
 
 const events = require('../eventPool');
 const Chance = require('chance');
+const thankYou = require('./handler');
 
 // Instantiate Chance so it can be used
 const chance = new Chance();
@@ -23,6 +24,3 @@ events.emit('pickup', {
   },
 });
 
-function thankYou(payload) {
-  console.log('Thank you for your order ' + payload.data.customer);
-}
